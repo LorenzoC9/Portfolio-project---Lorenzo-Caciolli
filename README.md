@@ -1,8 +1,11 @@
-# PROJECT TITLE 
+# Project portfolio - predicting liver disease in Hepatitis C patients
 
 
 ## NON-TECHNICAL EXPLANATION OF YOUR PROJECT
-100 words to explain what your project is about to a general audience. 
+The identification of a disease stage could be very complex, sometimes involving the necessity of invasive measurements. In this context, the use of key metabolic markers has been recently described as a valuable tool for non invasive, but very efficient disease diagnostics.
+The present application concerns the development of a machine learning tool for the classification of end-stage liver disease in patients affected by Hepatitis C.
+The reference database concerns a cohort of both female and male individuals. The dataset contains several metabolic predictors (e.g., serum albumin level, gamma glutamyl transferase etc.) and one categorical outcome corresponding to the stage of the disease (e.g., hepatitis, fibrosis, cirrhosis,etc.). Based on the predictors, the main aim of the model is to correctly classify the stage of liver disease progression in the patients’ cohort.
+
 
 ## DATA
 A summary of the data you’re using, remembering to include where you got it and any relevant citations. 
