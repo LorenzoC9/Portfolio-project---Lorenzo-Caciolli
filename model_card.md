@@ -4,20 +4,29 @@ See the [example Google model cards](https://modelcards.withgoogle.com/model-rep
 
 ## Model Description
 
-**Input:** Describe the inputs of your model 
+**Input:** Numerical data (demographical and biochemical data)
 
-**Output:** Describe the output(s) of your model
+**Output:** Classification of a data instance in a different category according to the value of the inputs. The categories involve healthy conditions (Blood donor), suspected healthy conditions (Suspected blood donor) and hepatic pathological conditions (hepatitis, fibrosis, cirrhosis). 
 
-**Model Architecture:** Describe the model architecture you’ve used
+**Model Architecture:** Decision tree for classification purpose with hyperparameter optimization carried out with grid search method. 
 
 ## Performance
 
-Give a summary graph or metrics of how the model performs. Remember to include how you are measuring the performance and what data you analysed it on. 
+The performance was quantifies in the overal classification accuracy for the previously shown categories. The model was trained on a training set and its performance was further evaluated on new - unseen - data (test set). 
 
 ## Limitations
 
-Outline the limitations of your model.
+Data instance disparities:
+The overall model performance may be impacted by the disparity of data instances from each of the concerned categories in the training set. When focusing on a specific category (e.g., correctly classify cirrhosis instances), it would be necessary to carry out oversampling techniques to re-establish proportionalities within the dataset. 
+
+Different scale of predictors:
+Model performance may be affected by the different scales (and potentially different experimental setups) used to obtain the biochemical predictors.
+
+Presence of several missing values: 
+The model's performance may suffer the presence of multiple missing values in the dataset. Often, biomarkers expressions are generally independent from each other. Therefore, the most common strategy to deal with missing data is generally represented by removing missing instances. 
 
 ## Trade-offs
 
-Outline any trade-offs of your model, such as any circumstances where the model exhibits performance issues. 
+The model displays higher performance on the test set (overall accuracy) whenever model hyperparameters were previously optimized before. 
+
+Increased performance for one category in particular?
