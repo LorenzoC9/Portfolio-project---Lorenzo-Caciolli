@@ -1,4 +1,4 @@
-# Project portfolio - predicting liver disease in Hepatitis C patients via blood analysis
+# Project portfolio - Predicting liver disease in Hepatitis C patients via blood analysis
 
 
 ## NON-TECHNICAL EXPLANATION OF YOUR PROJECT
